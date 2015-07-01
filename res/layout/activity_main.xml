@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/controlPlaceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/edt_places"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/imv_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/explorer" />
+
+            <ImageView
+                android:id="@+id/imv_homesw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/homeswitcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/controlDirecLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="9" >
+
+            <ImageView
+                android:id="@+id/imv_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                android:src="@drawable/rightbutton" />
+
+            <ImageView
+                android:id="@+id/imv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                android:src="@drawable/leftbutton" />
+               <ImageView
+                android:id="@+id/imv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:scaleType="fitXY"
+                android:src="@drawable/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="10" >
+
+            <ImageView
+                android:id="@+id/imv_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="Touch to find the places"
+                android:scaleType="fitXY"
+                android:src="@drawable/places1" />
+
+            <ImageView
+                android:id="@+id/imv_getcusok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/browser2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imv_getcusmanu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/navigation" />
+
+            <ImageView
+                android:id="@+id/imv_getcusfail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/myphoneexplorer" />
+
+            <ImageView
+                android:id="@+id/imv_haveproblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

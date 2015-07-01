@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item android:id="@+id/menu_haveproblem" android:enabled="true" android:title="Báo hỏng" android:visible="true">
+    </item><item android:id="@+id/menu_refresh" android:checked="true" android:menuCategory="system" android:showAsAction="ifRoom" android:icon="@drawable/actionba2" android:title="Làm mới" android:visible="true">
+    </item>
+    <item
+        android:id="@+id/menu_detail"
+        android:enabled="true"
+        android:menuCategory="system"
+        android:title="Chi tiết"
+        android:visible="true">
+    </item>
+    
+    
+    
+    <item android:id="@+id/menu_callst" android:title="Gọi"></item><item android:id="@+id/menu_about" android:enabled="true" android:title="Thông Tin" android:visible="true" /><item android:id="@+id/menu_settings" android:title="Thoát" />
+
+</menu>
